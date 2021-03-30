@@ -1,0 +1,42 @@
+.sideBar {
+  height: 300px;
+  width: 112px;
+  position: fixed;
+  margin-left: 80%;
+
+  ul,
+  li,
+  a {
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    text-decoration: none;
+    background: rgb(87, 88, 88);
+    line-height: 2.6rem;
+    color: rgb(212, 203, 203);
+    font-weight: 600;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+  }
+
+  li:nth-child(1) a {
+    border-radius: 10px 10px 0px 0px;
+  }
+  li:nth-child(5) a {
+    border-radius: 0px 0px 10px 10px;
+  }
+}

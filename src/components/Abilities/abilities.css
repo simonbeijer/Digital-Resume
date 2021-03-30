@@ -1,0 +1,81 @@
+.col-3-div {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 2% 5% 2.5% 35% 5% 30% 5% 10% 3%;
+  grid-template-areas:
+    ". . . . ."
+    ". . ab . ."
+    ". sk sk sk ."
+    ". skd skd skd ."
+    ". to to to ."
+    ". tod tod tod ."
+    ". la la la ."
+    ". lad lad lad ."
+    ". . . . .";
+}
+
+.skill-all {
+  height: 1.6rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-3-div p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.col-3-div h2 {
+  grid-area: ab;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-3-div h4:nth-child(2) {
+  grid-area: sk;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.col-3-div h4:nth-child(3) {
+  grid-area: to;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.col-3-div h4:nth-child(4) {
+  grid-area: la;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.col-3-div .skills {
+  grid-area: skd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.col-3-div .tools {
+  grid-area: tod;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.col-3-div .languages {
+  grid-area: lad;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
