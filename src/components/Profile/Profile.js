@@ -4,12 +4,12 @@ import sb2 from "./sb2.png";
 
 const Profile = () => {
   return (
-    <div id="profile" class="grid-col-1 display-grid grid-all">
-      <div class="max-width col-1-div display-grid">
+    <div id="profile" className="grid-col-1 display-grid grid-all">
+      <div className="max-width col-1-div display-grid">
         <h2>Profile</h2>
         <h4>Front-End Developer</h4>
         <h3>About</h3>
-        <div class="about-text">
+        <div className="about-text">
           <p>Hi! I'm a Front-End Web Developer.</p>
           <p>My name is Simon I’m 29 year old.</p>
           <p>Right now i'm studying at Medieinstitutet in Gothenburg.</p>
@@ -20,11 +20,11 @@ const Profile = () => {
             React and React Native.
           </p>
         </div>
-        <div class="about-icon">
-          <i class="far fa-file-code fa-10x"></i>
+        <div className="about-icon">
+          <i className="far fa-file-code fa-10x"></i>
         </div>
         <h3>Details</h3>
-        <div class="profile-text">
+        <div className="profile-text">
           <h4>Name:</h4>
           <p> Simon Beijer</p>
           <h4>Age:</h4>
@@ -35,10 +35,10 @@ const Profile = () => {
           <p>Earth,</p>
           <p>Milky way</p>
         </div>
-        <div class="details-icon">
-          <i class="far fa-id-badge fa-10x"></i>
+        <div className="details-icon">
+          <i className="far fa-id-badge fa-10x"></i>
         </div>
-        <div class="höna">
+        <div className="höna">
           <img alt="simon" src={sb2}></img>
         </div>
       </div>

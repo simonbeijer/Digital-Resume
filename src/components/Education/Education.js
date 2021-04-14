@@ -3,14 +3,13 @@ import "./education.css";
 
 const Education = () => {
   return (
-    <div id="education" class="grid-col-2 display-grid">
-      <div class="col-2-div">
+    <div id="education" className="grid-col-2 display-grid">
+      <div className="col-2-div">
         <h2>Education</h2>
-        <div class="bth">
+        <div className="bth">
           <ul>
             <li>
-              {" "}
-              <i class="fas fa-chevron-circle-right"></i>2018 - 2019
+              <i className="fas fa-chevron-circle-right"></i>2018 - 2019
             </li>
             <li>
               Blekinge Institute of Technology, course package web programming
@@ -44,11 +43,11 @@ const Education = () => {
             </li>
           </ul>
         </div>
-        <div class="medieinstitutet">
+        <div className="medieinstitutet">
           <ul>
             <li>
               {" "}
-              <i class="fas fa-chevron-circle-right"></i>2019-2021
+              <i className="fas fa-chevron-circle-right"></i>2019-2021
             </li>
             <li>Medieinstitutet Gothenburg, Front-End developing</li>
 
