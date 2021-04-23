@@ -1,13 +1,66 @@
 import React from "react";
 import "./projects.css";
 import test from "./spaceapp.png";
+import ImgDiv from "./imgDiv";
+import useWindowDimensions from "../../sizeHook";
 
 const Projects = () => {
+  const { width, height } = useWindowDimensions();
   return (
-    <div id="projects" className="grid-col-4 display-grid">
-      <div className="col-4-div">
-        <h2>Projects old to new</h2>
-        <div className="project-1">
+    <div id="projects" className="grid-col-4 max-width">
+      <div className="col-4-div display-flex">
+        <h2>Projects 💼</h2>
+        <div
+          className="display-flex"
+          style={
+            width > 800
+              ? {
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  width: "100%",
+                }
+              : { flexDirection: "column" }
+          }
+        >
+          <ImgDiv
+            alt="test"
+            text="TEST TEST TEST TEST "
+            link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
+            img="test"
+          />
+          <ImgDiv
+            alt="test"
+            text="TEST TEST TEST TEST "
+            link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
+            img="test"
+          />
+        </div>
+        <div
+          className="display-flex"
+          style={
+            width > 800
+              ? {
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                  width: "100%",
+                }
+              : { flexDirection: "column" }
+          }
+        >
+          <ImgDiv
+            alt="test"
+            text="TEST TEST TEST TEST "
+            link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
+            img="test"
+          />
+          <ImgDiv
+            alt="test"
+            text="TEST TEST TEST TEST "
+            link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
+            img="test"
+          />
+        </div>
+        {/* <div className="project-1">
           <img src={test} alt="music-producer"></img>{" "}
         </div>
         <div className="project-1-text">
@@ -108,7 +161,7 @@ const Projects = () => {
           <p>Back-End Node.js</p>
           <p>Chat with socket.io</p>
           <p>Working chat with gifs :)</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,17 +1,5 @@
 .col-1-div {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 5% 5% 5% 10% 10% 10% 50% 5%;
-  grid-template-areas:
-    ". . . . ."
-    ". . div1p . ."
-    ". . div1f. ."
-    ". . . . ."
-    ". div1h3a img div1h3d ."
-    ". div1h3a img div1h3d ."
-    ".  div1pa . div1pd ."
-    ". . . . .";
+  flex-direction: column;
 }
 
 .col-1-div .höna {
@@ -22,89 +10,16 @@
 }
 .col-1-div .höna img {
   height: auto;
-  width: 80%;
+  width: 60%;
 }
 
-.col-1-div .profile-text {
-  text-align: center;
+@media only screen and (max-width: 1000px) {
+  .about-div {
+    flex-direction: column;
+  }
 }
-.col-1-div h2:nth-child(1) {
-  grid-area: div1p;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.col-1-div h4 {
-  grid-area: div1f;
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-}
-
-.col-1-div h3:nth-child(3) {
-  grid-area: div1h3a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: solid grey 1px;
-}
-
-.col-1-div h3:nth-child(6) {
-  grid-area: div1h3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: solid grey 1px;
-}
-
-.col-1-div .about-text {
-  grid-area: div1pa;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.col-1-div p {
-  margin: 0;
-  padding: 0;
-}
-
-.col-1-div .profile-text {
-  grid-area: div1pd;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  line-height: 2rem;
-  padding-top: 1.6rem;
-}
-
-.col-1-div .details-icon {
-  grid-area: div1pd;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.col-1-div .details-icon i {
-  font-size: 16rem;
-  opacity: 0.1;
-  color: rgb(175, 184, 169);
-}
-
-.col-1-div .about-icon {
-  grid-area: div1pa;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.col-1-div .about-icon i {
-  font-size: 16rem;
-  opacity: 0.1;
-  color: rgb(175, 184, 169);
+@media only screen and (min-width: 1000px) {
+  .about-div {
+    justify-content: space-evenly;
+  }
 }

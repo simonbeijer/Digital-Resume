@@ -3,34 +3,33 @@ import "./education.css";
 
 const Education = () => {
   return (
-    <div id="education" className="grid-col-2 display-grid">
-      <div className="col-2-div">
-        <h2>Education</h2>
-        <div className="bth">
+    <div id="education" style={{ padding: "5rem 5rem" }} className="max-width">
+      <div
+        style={{ padding: "0 10% 0 10%" }}
+        className="col-2-div display-flex"
+      >
+        <h2>Education‍ 🏫</h2>
+        <div className="bth" style={{ padding: "2rem 1rem" }}>
           <ul>
-            <li>
-              <i className="fas fa-chevron-circle-right"></i>2018 - 2019
-            </li>
+            <li style={{ margin: "0 0 1rem 1rem" }}>2018 - 2019</li>
             <li>
               Blekinge Institute of Technology, course package web programming
               and database
             </li>
             <li>
               <p>
-                {" "}
                 This was a course with a mixture between Front-End and Back-End
                 programming. The first two courses was Front-End with CSS3,
-                HTML5, PHP, LESS, SASS, and SQL. Subjects including design and
-                UX.
+                HTML5, PHP, and SQL. Subjects including design and UX.
               </p>
             </li>
             <li>
               <p>
-                The other two courses where Back-End with PHP, JavaScript,
-                Node.js and SQL. Subjects including Object-Oriented-Programming,
-                API's, frameworks and databases.
+                The other two courses where Back-End with PHP, JavaScript, Node
+                and SQL. Subjects including Object-Oriented-Programming, API's,
+                frameworks and databases.
               </p>
-              <li>
+              <li style={{ padding: "1rem 0  0 0.6rem" }}>
                 <a
                   without
                   rel="noreferrer"
@@ -43,12 +42,9 @@ const Education = () => {
             </li>
           </ul>
         </div>
-        <div className="medieinstitutet">
+        <div className="medieinstitutet" style={{ padding: "3rem 1rem" }}>
           <ul>
-            <li>
-              {" "}
-              <i className="fas fa-chevron-circle-right"></i>2019-2021
-            </li>
+            <li style={{ margin: "0 0 1rem 1rem" }}>2019-2021</li>
             <li>Medieinstitutet Gothenburg, Front-End developing</li>
 
             <li>
@@ -65,7 +61,7 @@ const Education = () => {
                 includes Back-End ,UX, dynamic and agile web development.
               </p>
             </li>
-            <li>
+            <li style={{ padding: "1rem 0  0 0.6rem" }}>
               <a
                 without
                 rel="noreferrer"

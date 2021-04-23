@@ -1,26 +1,18 @@
 .col-2-div {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 7% 10% 35% 5% 35% 8%;
-  grid-template-areas:
-    ". . . . ."
-    ". . div2e . ."
-    ". div2lib div2lib div2lib ."
-    ". . . . ."
-    ".  div2lim div2lim div2lim ."
-    ". . . . .";
+  flex-direction: column;
+}
+.col-2-div ul {
+  list-style-type: none;
 }
 
-.col-2-div h2 {
-  grid-area: div2e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.col-2-div a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(138, 184, 138);
+  text-decoration: none;
 }
 
 .col-2-div .bth {
-  grid-area: div2lib;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,9 +20,15 @@
 }
 
 .col-2-div .medieinstitutet {
-  grid-area: div2lim;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-bottom: 1px solid grey;
+}
+
+@media only screen and (max-width: 1000px) {
+  .col-2-div {
+    max-width: 70%;
+    margin: auto;
+  }
 }

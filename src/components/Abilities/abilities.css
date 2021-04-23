@@ -1,35 +1,24 @@
 .col-3-div {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 2% 5% 2.5% 35% 5% 30% 5% 10% 3%;
-  grid-template-areas:
-    ". . . . ."
-    ". . ab . ."
-    ". sk sk sk ."
-    ". skd skd skd ."
-    ". to to to ."
-    ". tod tod tod ."
-    ". la la la ."
-    ". lad lad lad ."
-    ". . . . .";
 }
 
-.skill-all {
-  height: 1.6rem;
-  background-color: white;
+.abilityDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* .skill-all {
+  height: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 .col-3-div p {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
 }
 
 .col-3-div h2 {
-  grid-area: ab;
   display: grid;
   align-items: center;
   justify-content: center;

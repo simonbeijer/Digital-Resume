@@ -1,38 +1,27 @@
 .col-4-div {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 16% 32% 4% 32% 16%;
-  grid-template-rows: 5% 5% 25% 4% 25% 4% 25% 4% 3%;
-  grid-template-areas:
-    ". . . . ."
-    ". div4h1 div4h1 div4h1 ."
-    ". carl . design ."
-    ". clink . dlink ."
-    ". game . web ."
-    ". glink . wlink ."
-    ". nasa . chat ."
-    ". nasalink . chatlink ."
-    ". . . . .";
+  flex-direction: column;
 }
 
 .col-4-div h2 {
-  grid-area: div4h1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.col-4-div .project-1,
-.project-1-text {
-  grid-area: carl;
+.project {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+.col-4-div .project-1,
+.project-1-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .col-4-div .project-1-links {
-  grid-area: clink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -40,7 +29,6 @@
 
 .col-4-div .project-2,
 .project-2-text {
-  grid-area: design;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -48,14 +36,12 @@
 }
 
 .col-4-div .project-2-links {
-  grid-area: dlink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .col-4-div .project-3,
 .project-3-text {
-  grid-area: game;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -63,7 +49,6 @@
 }
 
 .col-4-div .project-3-links {
-  grid-area: glink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -71,7 +56,6 @@
 
 .col-4-div .project-4,
 .project-4-text {
-  grid-area: web;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -79,7 +63,6 @@
 }
 
 .col-4-div .project-4-links {
-  grid-area: wlink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -87,7 +70,6 @@
 
 .col-4-div .project-5,
 .project-5-text {
-  grid-area: nasa;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -95,7 +77,6 @@
 }
 
 .col-4-div .project-5-links {
-  grid-area: nasalink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -103,7 +84,6 @@
 
 .col-4-div .project-6,
 .project-6-text {
-  grid-area: chat;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -111,7 +91,6 @@
 }
 
 .col-4-div .project-6-links {
-  grid-area: chatlink;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
