@@ -7,13 +7,16 @@ import useWindowDimensions from "../../sizeHook";
 const Projects = () => {
   const { width, height } = useWindowDimensions();
   return (
-    <div id="projects" className="grid-col-4 max-width">
-      <div className="col-4-div display-flex">
+    <div id="projects" className="grid-col-4 ">
+      <div
+        className="col-4-div display-flex max-width"
+        style={{ padding: "4rem 18% 4rem 18%" }}
+      >
         <h2>Projects 💼</h2>
         <div
           className="display-flex"
           style={
-            width > 800
+            width > 1000
               ? {
                   flexDirection: "row",
                   justifyContent: "space-around",
@@ -26,38 +29,38 @@ const Projects = () => {
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
-            img="test"
+            img={test}
           />
           <ImgDiv
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
-            img="test"
+            img={test}
           />
         </div>
         <div
           className="display-flex"
           style={
-            width > 800
+            width > 1000
               ? {
                   flexDirection: "row",
                   justifyContent: "space-around",
                   width: "100%",
                 }
-              : { flexDirection: "column" }
+              : { flexDirection: "column", width: "100%" }
           }
         >
           <ImgDiv
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
-            img="test"
+            img={test}
           />
           <ImgDiv
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
-            img="test"
+            img={test}
           />
         </div>
         {/* <div className="project-1">

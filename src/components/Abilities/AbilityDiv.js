@@ -1,15 +1,15 @@
 import React from "react";
 import "./abilities.css";
 
-const AbilityDiv = ({ name, size }) => {
-  return (
+const AbilityDiv = ({ name, size, title }) => {
+  return !title ? (
     <div
-      className="abilityDiv"
+      className="abilityDiv "
       style={{ width: "100%", margin: "1rem 0 1rem 0" }}
     >
       <div
         style={{ width: size, backgroundColor: "whitesmoke" }}
-        className="skill-all"
+        className="skill-all "
       >
         <p>{name}</p>
       </div>
@@ -19,6 +19,7 @@ const AbilityDiv = ({ name, size }) => {
           size == "100%"
             ? {
                 backgroundColor: "whitesmoke",
+
                 flex: 1,
               }
             : { backgroundColor: "none" })
@@ -26,6 +27,13 @@ const AbilityDiv = ({ name, size }) => {
       >
         <p>{size}</p>
       </div>
+    </div>
+  ) : (
+    <div
+      className="display-flex stripes"
+      style={{ flex: 1, backgroundColor: "whitesmoke" }}
+    >
+      <p>{name}</p>
     </div>
   );
 };

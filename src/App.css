@@ -16,3 +16,9 @@
 .padding-content {
   padding: 5rem;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Noto Sans JP", sans-serif;
+}

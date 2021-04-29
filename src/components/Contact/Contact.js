@@ -5,8 +5,8 @@ import "./contact.scss";
 const Contact = () => {
   const { width, height } = useWindowDimensions();
   return (
-    <div id="contact" className="grid-col-5 max-width">
-      <div className="col-5-div display-flex">
+    <div id="contact" className="grid-col-5 ">
+      <div className="col-5-div display-flex max-width">
         <div>
           <h2>Contact 📨</h2>
         </div>
@@ -67,7 +67,7 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        <p style={{ margin: "3rem 0 2rem 0" }}>
+        <p style={{ margin: "5rem 0 2rem 0" }}>
           &copy; Simon Beijer 2020 <i className="fab fa-hooli fa-1x"></i>
         </p>
       </div>

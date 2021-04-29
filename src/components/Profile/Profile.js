@@ -4,8 +4,8 @@ import sb2 from "./sb2.png";
 
 const Profile = () => {
   return (
-    <div id="profile" className="max-width padding-content">
-      <div className="col-1-div display-flex">
+    <div id="profile" className=" padding-content">
+      <div className="col-1-div display-flex ">
         <div style={{ padding: "2rem" }}>
           <h2>About 👨🏼‍💻</h2>
         </div>

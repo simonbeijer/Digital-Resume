@@ -13,7 +13,11 @@ const Abilities = () => {
         <h2>Abilities 🔧</h2>
         <h4>Skills</h4>
         {skillArr.map((content) => (
-          <AbilityDiv name={content.name} size={content.size} />
+          <AbilityDiv
+            name={content.name}
+            size={content.size}
+            title={content.title}
+          />
         ))}
       </div>
     </div>
