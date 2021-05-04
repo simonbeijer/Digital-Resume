@@ -7,10 +7,10 @@ import useWindowDimensions from "../../sizeHook";
 const Projects = () => {
   const { width, height } = useWindowDimensions();
   return (
-    <div id="projects" className="grid-col-4 ">
+    <div id="projects" className="grid-col-4 padding-content">
       <div
         className="col-4-div display-flex max-width"
-        style={{ padding: "4rem 18% 4rem 18%" }}
+        style={{ padding: "3rem 0 2rem 0" }}
       >
         <h2>Projects 💼</h2>
         <div
@@ -26,12 +26,14 @@ const Projects = () => {
           }
         >
           <ImgDiv
+            className="projektDiv"
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
             img={test}
           />
           <ImgDiv
+            className="projektDiv"
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
@@ -51,12 +53,14 @@ const Projects = () => {
           }
         >
           <ImgDiv
+            className="projektDiv"
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"
             img={test}
           />
           <ImgDiv
+            className="projektDiv"
             alt="test"
             text="TEST TEST TEST TEST "
             link="http://www.student.bth.se/~sibj18/dbwebb-kurser/design/me/proj/htdocs/"

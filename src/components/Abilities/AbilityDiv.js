@@ -33,7 +33,16 @@ const AbilityDiv = ({ name, size, title }) => {
       className="display-flex stripes"
       style={{ flex: 1, backgroundColor: "whitesmoke" }}
     >
-      <p>{name}</p>
+      <p
+        style={{
+          fontSize: "1.2rem",
+          margin: "0.6rem 0rem ",
+          fontWeight: "600",
+          color: "#babbba",
+        }}
+      >
+        {name}
+      </p>
     </div>
   );
 };

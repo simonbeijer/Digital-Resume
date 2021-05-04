@@ -8,18 +8,18 @@ const SideBar = () => {
   const { width, height } = useWindowDimensions();
   const [calScroll, setCalScroll] = useState("");
   useEffect(() => {
-    if (height / 3 > scroll) {
-      setCalScroll(height - scroll);
-    } else if (height / 2 < scroll) {
-      setCalScroll(height / 2);
+    if (scroll < height - height / 4) {
+      setCalScroll(height - scroll - 16);
+    } else if (scroll > height / 2) {
+      setCalScroll(height / 4);
     }
     console.log(
       "HEIGHT: ",
       height,
-      "CALSCROLL: ",
-      calScroll,
       "SCROLL: ",
-      scroll
+      scroll,
+      "CALSCROLL: ",
+      calScroll
     );
   }, [height, calScroll, scroll, setCalScroll]);
 

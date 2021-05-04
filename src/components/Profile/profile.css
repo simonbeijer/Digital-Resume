@@ -1,8 +1,13 @@
 #profile {
+  background-color: #72705b62;
 }
 
 .col-1-div {
   flex-direction: column;
+  background-color: #00000005;
+}
+.col-1-div h4 {
+  margin: 0.6rem 0rem;
 }
 
 .col-1-div .höna {
@@ -13,7 +18,7 @@
 }
 .col-1-div .höna img {
   height: auto;
-  width: 60%;
+  width: 55%;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,5 +1,10 @@
+#projects {
+  background-color: rgb(235, 235, 235);
+}
+
 .col-4-div {
   flex-direction: column;
+  background-color: #00000005;
 }
 
 .col-4-div h2 {

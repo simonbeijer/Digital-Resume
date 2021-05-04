@@ -1,5 +1,10 @@
+#education {
+  background-color: rgb(235, 235, 235);
+}
+
 .col-2-div {
   flex-direction: column;
+  background-color: #00000005;
 }
 .col-2-div ul {
   list-style-type: none;

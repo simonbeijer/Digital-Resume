@@ -1,7 +1,10 @@
 import React from "react";
 import useWindowDimensions from "../../sizeHook";
 import "./contact.scss";
-
+import linked from "./LI-In-Bug.png";
+import github from "./Octocat.png";
+import hooli from "./hooli.png";
+import gmail from "./gmail.png";
 const Contact = () => {
   const { width, height } = useWindowDimensions();
   return (
@@ -16,7 +19,7 @@ const Contact = () => {
             width > 600
               ? {
                   flexDirection: "row",
-                  justifyContent: "space-around",
+                  justifyContent: "space-evenly",
                   alignItems: "center",
                 }
               : {
@@ -26,49 +29,129 @@ const Contact = () => {
                 }
           }
         >
-          <p
+          <div
+            className="display-flex"
             style={
               width > 600
                 ? {
+                    backgroundColor: "#00000015",
+                    flexGrow: 1,
+                    height: "12rem",
+                    width: "33.3%",
                     marginRight: "2rem",
+                    flexDirection: "column",
+                  }
+                : {
+                    backgroundColor: "#00000015",
+                    flexGrow: 1,
+                    height: "12rem",
+                    width: "33.3%",
+
+                    flexDirection: "column",
+                    marginRight: "0rem",
+                  }
+            }
+          >
+            <p style={{ textAlign: "center" }}>
+              Please contact me if you are intrested
+            </p>
+            <br></br>
+            <a href="mailto:simon.beijer@gmail.com" className="display-flex">
+              <img
+                alt="gmail link"
+                style={{
+                  height: "3rem",
+                  // paddingTop: "1rem",
+                }}
+                src={gmail}
+              ></img>
+            </a>
+          </div>
+
+          <div
+            className="display-flex"
+            style={
+              width > 600
+                ? {
+                    backgroundColor: "#00000015",
+                    flexGrow: 1,
+                    height: "12rem",
+                    width: "33.3%",
+                    flexDirection: "column",
                   }
                 : {
                     marginRight: "0rem",
                   }
             }
           >
-            Please contact me if you are intrested
-            <a href="mailto:simon.beijer@gmail.com">
-              <i className="fas fa-envelope fa-5x"></i>
+            <p style={{ textAlign: "center" }}>
+              Add me on LinkedIn<br></br>
+            </p>
+            <a
+              href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
+              className="display-flex"
+            >
+              <img
+                alt="linked in link"
+                style={{
+                  height: "3rem",
+                  paddingTop: "1rem",
+                }}
+                src={linked}
+              ></img>
             </a>
-          </p>
+          </div>
 
-          <p
+          <div
+            className="display-flex"
             style={
               width > 600
                 ? {
-                    marginRight: "2rem",
+                    backgroundColor: "#00000015",
+                    flexGrow: 1,
+                    height: "12rem",
+                    width: "33.3%",
+                    marginLeft: "2rem",
+                    flexDirection: "column",
                   }
                 : {
-                    marginRight: "0rem",
+                    backgroundColor: "#00000015",
+                    flexGrow: 1,
+                    height: "12rem",
+                    width: "33.3%",
+                    flexDirection: "column",
+                    marginLeft: "0rem",
                   }
             }
           >
-            Add me on LinkedIn
-            <a href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se">
-              <i className="fab fa-linkedin fa-5x"></i>
+            <p style={{ textAlign: "center" }}>
+              Feel free to visit my Github<br></br>
+            </p>
+            <a href="https://github.com/simonbeijer" className="display-flex">
+              <img
+                alt="github link"
+                style={{
+                  filter: "grayscale(50%)",
+                  height: "3rem",
+                  paddingTop: "1rem",
+                }}
+                src={github}
+              ></img>
             </a>
-          </p>
-
-          <p>
-            Feel free to visit my Github
-            <a href="https://github.com/simonbeijer">
-              <i className="fab fa-github-square fa-5x"></i>
-            </a>
-          </p>
+          </div>
         </div>
-        <p style={{ margin: "5rem 0 2rem 0" }}>
-          &copy; Simon Beijer 2020 <i className="fab fa-hooli fa-1x"></i>
+        <p
+          style={{ margin: "5rem 0 2rem 0", flexDirection: "column" }}
+          className="display-flex"
+        >
+          &copy; Simon Beijer 2021
+          <img
+            alt="hooli"
+            style={{
+              height: "2rem",
+            }}
+            src={hooli}
+          ></img>
         </p>
       </div>
     </div>
