@@ -58,6 +58,7 @@
   width: 100%;
   max-height: 1200px;
   background-image: url(https://images.unsplash.com/photo-1476438302226-7d46568df43d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  /* background-image: url(https://images.unsplash.com/photo-1550079782-9da2c1c9299b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -118,11 +119,11 @@ h2 {
 }
 
 .sideButton {
-  width: 108px;
+  width: 105px;
   height: 3.4rem;
   position: absolute;
   bottom: 0;
-  left: 81.4%;
+  left: 84.4%;
   padding: 1rem 0.6rem 1rem 0.6rem;
   border-radius: 10px 10px 0px 0px;
   background: #414444;

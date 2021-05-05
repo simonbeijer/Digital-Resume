@@ -14,11 +14,14 @@ function App() {
   const profileDiv = useRef();
   const { width, height } = useWindowDimensions();
   const { scroll } = getWindowScroll();
-  // useEffect(() => {
-  //   if (scroll > 12) {
-  //     console.log("PROFILE", profileDiv);
-  //   }
-  // });
+
+  useEffect(() => {
+    console.log("REF", profileDiv.current);
+
+    if (scroll > 12) {
+      console.log("PROFILE", profileDiv);
+    }
+  });
 
   return (
     <div className="App">

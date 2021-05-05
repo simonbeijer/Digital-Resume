@@ -30,23 +30,14 @@ const Contact = () => {
           }
         >
           <div
-            className="display-flex"
+            className="display-flex footer-divs"
             style={
               width > 600
                 ? {
-                    backgroundColor: "#00000015",
-                    flexGrow: 1,
-                    height: "12rem",
-                    width: "33.3%",
-                    marginRight: "2rem",
+                    marginRight: "1rem",
                     flexDirection: "column",
                   }
                 : {
-                    backgroundColor: "#00000015",
-                    flexGrow: 1,
-                    height: "12rem",
-                    width: "33.3%",
-
                     flexDirection: "column",
                     marginRight: "0rem",
                   }
@@ -69,14 +60,10 @@ const Contact = () => {
           </div>
 
           <div
-            className="display-flex"
+            className="display-flex footer-divs"
             style={
               width > 600
                 ? {
-                    backgroundColor: "#00000015",
-                    flexGrow: 1,
-                    height: "12rem",
-                    width: "33.3%",
                     flexDirection: "column",
                   }
                 : {
@@ -103,22 +90,14 @@ const Contact = () => {
           </div>
 
           <div
-            className="display-flex"
+            className="display-flex footer-divs"
             style={
               width > 600
                 ? {
-                    backgroundColor: "#00000015",
-                    flexGrow: 1,
-                    height: "12rem",
-                    width: "33.3%",
-                    marginLeft: "2rem",
+                    marginLeft: "1rem",
                     flexDirection: "column",
                   }
                 : {
-                    backgroundColor: "#00000015",
-                    flexGrow: 1,
-                    height: "12rem",
-                    width: "33.3%",
                     flexDirection: "column",
                     marginLeft: "0rem",
                   }

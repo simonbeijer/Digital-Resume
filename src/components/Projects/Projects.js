@@ -1,6 +1,9 @@
 import React from "react";
 import "./projects.css";
-import test from "./spaceapp.png";
+import mli from "./mli.png";
+import harmoni from "./harmoni.png";
+import app from "./scorify.png";
+import work from "./FizzBuzz.png";
 import ImgDiv from "./imgDiv";
 import useWindowDimensions from "../../sizeHook";
 
@@ -26,18 +29,20 @@ const Projects = () => {
           }
         >
           <ImgDiv
+            visit="Live link"
             className="projektDiv"
             alt="Mlilures"
             text="MLI lures project made for a friend."
             link="https://mlilures.se/"
-            img={test}
+            img={mli}
           />
           <ImgDiv
+            visit="Live link"
             className="projektDiv"
             alt="Själsharmoni"
-            text="Själsharmoni project made for a side business"
+            text="Själsharmoni project for a healing business"
             link="https://www.xn--sjlsharmoni-m8a.se/"
-            img={test}
+            img={harmoni}
           />
         </div>
         <div
@@ -53,18 +58,20 @@ const Projects = () => {
           }
         >
           <ImgDiv
+            visit="GitHub link"
             className="projektDiv"
             alt="Scorify"
             text="Scorify is a final project with ReactNative"
             link="https://github.com/FThelin/mitt-lag---frontend"
-            img={test}
+            img={app}
           />
           <ImgDiv
+            visit="Live link"
             className="projektDiv"
             alt="Fizzbuzz"
-            text="Fizzbuzz work test made in 5 hours"
+            text="Fizzbuzz work test made in about 5 hours"
             link="https://simonbeijer.github.io/fizzbuzz/"
-            img={test}
+            img={work}
           />
         </div>
       </div>
