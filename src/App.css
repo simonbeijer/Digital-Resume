@@ -22,3 +22,9 @@ h2,
 h3 {
   font-family: "Noto Sans JP", sans-serif;
 }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}

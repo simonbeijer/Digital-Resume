@@ -12,7 +12,9 @@ const Education = () => {
           <h2>Education‍ 🏫</h2>
           <div className="bth" style={{ padding: "2rem 1rem" }}>
             <ul>
-              <li style={{ margin: "0 0 1rem 1rem" }}>2018 - 2019</li>
+              <li style={{ margin: "0 0 1rem 1rem", fontWeight: "600" }}>
+                2018 - 2019
+              </li>
               <li>
                 Blekinge Institute of Technology, course package web programming
                 and database
@@ -45,7 +47,9 @@ const Education = () => {
           </div>
           <div className="medieinstitutet" style={{ padding: "3rem 1rem" }}>
             <ul>
-              <li style={{ margin: "0 0 1rem 1rem" }}>2019-2021</li>
+              <li style={{ margin: "0 0 1rem 1rem", fontWeight: "600" }}>
+                2019-2021
+              </li>
               <li>Medieinstitutet Gothenburg, Front-End developing</li>
 
               <li>

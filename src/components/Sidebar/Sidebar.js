@@ -24,27 +24,31 @@ const SideBar = () => {
   }, [height, calScroll, scroll, setCalScroll]);
 
   return (
-    <div>
-      <div className="sideBar" style={{ marginTop: calScroll }}>
-        <ul>
-          <li className="nav-1">
-            <a href="#profile">About</a>
-          </li>
-          <li className="nav-2">
-            <a href="#education">Education</a>
-          </li>
-          <li className="nav-3">
-            <a href="#abilities">Abilities</a>
-          </li>
-          <li className="nav-4">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="nav-5">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <>
+      {width > 800 && (
+        <div>
+          <div className="sideBar" style={{ marginTop: calScroll }}>
+            <ul>
+              <li className="nav-1">
+                <a href="#profile">About</a>
+              </li>
+              <li className="nav-2">
+                <a href="#education">Education</a>
+              </li>
+              <li className="nav-3">
+                <a href="#abilities">Abilities</a>
+              </li>
+              <li className="nav-4">
+                <a href="#projects">Projects</a>
+              </li>
+              <li className="nav-5">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

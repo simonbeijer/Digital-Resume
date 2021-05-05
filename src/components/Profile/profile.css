@@ -4,7 +4,7 @@
 
 .col-1-div {
   flex-direction: column;
-  background-color: #00000005;
+  /* background-color: #00000005; */
 }
 .col-1-div h4 {
   margin: 0.6rem 0rem;
