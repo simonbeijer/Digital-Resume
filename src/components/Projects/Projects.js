@@ -15,7 +15,7 @@ const Projects = () => {
         className="col-4-div display-flex max-width"
         style={{ padding: "3rem 0 2rem 0" }}
       >
-        <h2>Projects 💼</h2>
+        <h2>Projects</h2>
         <div
           className="display-flex"
           style={

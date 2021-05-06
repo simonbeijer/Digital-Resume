@@ -11,7 +11,7 @@ const Contact = () => {
     <div id="contact" className="grid-col-5 ">
       <div className="col-5-div display-flex max-width">
         <div>
-          <h2>Contact 📨</h2>
+          <h2>Contact</h2>
         </div>
         <div
           className="footer-div"

@@ -9,28 +9,29 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import useWindowDimensions from "./sizeHook";
 import getWindowScroll from "./scrollHook";
+import { useState } from "react";
 
 function App() {
-  const profileDiv = useRef();
+  // const profileDiv = useRef();
   const { width, height } = useWindowDimensions();
   const { scroll } = getWindowScroll();
-
+  const [allHeights, setAllHeights] = useState([]);
   useEffect(() => {
-    console.log("REF", profileDiv.current);
-
-    if (scroll > 12) {
-      console.log("PROFILE", profileDiv);
-    }
+    console.log("APP", allHeights);
   });
+
+  const setAllHeightsFunction = (newObject) => {
+    setAllHeights((allHeights) => [...allHeights, newObject]);
+  };
 
   return (
     <div className="App">
       <SideBar />
       <HeroImg />
-      <Profile ref={profileDiv} />
-      <Education />
-      <Abilities />
-      <Projects />
+      <Profile setHeights={setAllHeightsFunction} />
+      <Education setHeights={setAllHeightsFunction} />
+      <Abilities setHeights={setAllHeights} />
+      <Projects setHeights={setAllHeights} />
       <Contact />
     </div>
   );

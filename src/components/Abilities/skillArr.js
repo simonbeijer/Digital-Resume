@@ -8,6 +8,7 @@ export const skillArr = [
   { name: "TypeScript", size: "70%" },
   { name: "PHP", size: "60%" },
   { name: "SQL", size: "60%" },
+  { name: "MongoDD", size: "60%" },
   { name: "Vue", size: "50%" },
   { name: "Angular", size: "40%" },
   { name: "TOOLS", size: "100%", title: true },

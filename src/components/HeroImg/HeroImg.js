@@ -11,7 +11,7 @@ const HeroImg = () => {
         <div className="col-pic-text">
           <h1 className="name">Simon Beijer</h1>
           <div className="name-border"></div>
-          <h3>Digital resume</h3>
+          <h4>Digital resume</h4>
         </div>
         {width > 800 ? (
           <div className="sideButton">

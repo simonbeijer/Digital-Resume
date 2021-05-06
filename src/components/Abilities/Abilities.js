@@ -10,7 +10,7 @@ const Abilities = () => {
         style={{ padding: "4rem 20% 4rem 20%" }}
         className="col-3-div max-width"
       >
-        <h2 style={{ textAlign: "center" }}>Abilities 🔧</h2>
+        <h2 style={{ textAlign: "center" }}>Abilities</h2>
         {skillArr.map((content) => (
           <AbilityDiv
             name={content.name}

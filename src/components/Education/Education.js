@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./education.css";
 
-const Education = () => {
+const Education = ({ setHeights }) => {
+  const educationDiv = useRef();
+  const [refState, setRefState] = useState(0);
+
+  useEffect(() => {
+    if (educationDiv.current.offsetHeight !== refState) {
+      setRefState(educationDiv.current.offsetHeight);
+      setHeights({ Education: refState });
+    }
+  }, [educationDiv, refState, setHeights]);
+
   return (
-    <div id="education" className="padding-content ">
+    <div ref={educationDiv} id="education" className="padding-content ">
       <div className="max-width">
         <div
           style={{ padding: "0 10% 2rem 10%" }}
           className="col-2-div display-flex"
         >
-          <h2>Education‍ 🏫</h2>
-          <div className="bth" style={{ padding: "2rem 1rem" }}>
+          <h2>Education‍</h2>
+          <div
+            className="bth"
+            style={{ padding: "2rem 1rem", maxWidth: "80%" }}
+          >
             <ul>
               <li style={{ margin: "0 0 1rem 1rem", fontWeight: "600" }}>
                 2018 - 2019
@@ -45,7 +58,10 @@ const Education = () => {
               </li>
             </ul>
           </div>
-          <div className="medieinstitutet" style={{ padding: "3rem 1rem" }}>
+          <div
+            className="medieinstitutet"
+            style={{ padding: "3rem 1rem", maxWidth: "80%" }}
+          >
             <ul>
               <li style={{ margin: "0 0 1rem 1rem", fontWeight: "600" }}>
                 2019-2021
@@ -63,7 +79,7 @@ const Education = () => {
                 <p>
                   The first course starts of with HTML5, CSS3 and JavaScript.
                   Then on to more programming with TypeScript, Node.js, React.
-                  Also includes Back-End ,UX, dynamic and agile web development.
+                  Also includes Back-End,UX, dynamic and agile web development.
                 </p>
               </li>
               <li style={{ padding: "1rem 0  0 0.6rem" }}>
@@ -75,6 +91,7 @@ const Education = () => {
                 >
                   Medieinstitutet.se
                 </a>
+                {console.log(refState)}
               </li>
             </ul>
           </div>
