@@ -29,8 +29,11 @@ const Contact = () => {
                 }
           }
         >
-          <div
-            className="display-flex footer-divs"
+          <a
+            className="display-flex footer-divs gmail"
+            href="mailto:simon.beijer@gmail.com"
+            rel="noreferrer"
+            target="_blank"
             style={
               width > 600
                 ? {
@@ -43,24 +46,14 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center" }}>
-              Please contact me if you are intrested
-            </p>
-            <br></br>
-            <a href="mailto:simon.beijer@gmail.com" className="display-flex">
-              <img
-                alt="gmail link"
-                style={{
-                  height: "3rem",
-                  // paddingTop: "1rem",
-                }}
-                src={gmail}
-              ></img>
-            </a>
-          </div>
+            <p>Please contact me if you are intrested</p>
+          </a>
 
-          <div
-            className="display-flex footer-divs"
+          <a
+            href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
+            rel="noreferrer"
+            target="_blank"
+            className="display-flex footer-divs linkedin"
             style={
               width > 600
                 ? {
@@ -71,26 +64,14 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center" }}>
-              Add me on LinkedIn<br></br>
-            </p>
-            <a
-              href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
-              className="display-flex"
-            >
-              <img
-                alt="linked in link"
-                style={{
-                  height: "3rem",
-                  paddingTop: "1rem",
-                }}
-                src={linked}
-              ></img>
-            </a>
-          </div>
+            <p>Add me on LinkedIn</p>
+          </a>
 
-          <div
-            className="display-flex footer-divs"
+          <a
+            href="https://github.com/simonbeijer"
+            rel="noreferrer"
+            target="_blank"
+            className="display-flex footer-divs github"
             style={
               width > 600
                 ? {
@@ -103,21 +84,8 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center" }}>
-              Feel free to visit my Github<br></br>
-            </p>
-            <a href="https://github.com/simonbeijer" className="display-flex">
-              <img
-                alt="github link"
-                style={{
-                  filter: "grayscale(50%)",
-                  height: "3rem",
-                  paddingTop: "1rem",
-                }}
-                src={github}
-              ></img>
-            </a>
-          </div>
+            <p>Feel free to visit my Github</p>
+          </a>
         </div>
         <p
           style={{ margin: "5rem 0 2rem 0", flexDirection: "column" }}

@@ -10,6 +10,27 @@
   }
 }
 
+.gmail {
+  display: block;
+  background-image: url("./email.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.github {
+  display: block;
+  background-image: url("./github-square.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  display: block;
+  background-image: url("./brand-linkedin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .footer-div {
   display: flex;
   width: 80%;

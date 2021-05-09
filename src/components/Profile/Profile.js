@@ -40,13 +40,7 @@ const Profile = ({ setHeights }) => {
           </div>
         </div>
         <div className="about-div display-flex" style={{ padding: "2rem" }}>
-          <div
-            style={
-              width > 1000
-                ? { paddingRight: "3rem", textAlign: "center" }
-                : { paddingLeft: "0" }
-            }
-          >
+          <div style={{ textAlign: "center" }}>
             <h3>What i do 👨🏼‍💻</h3>
             <p>Hi! I'm a Front-End Web Developer.</p>
             <p>My name is Simon I’m 30 year old.</p>
