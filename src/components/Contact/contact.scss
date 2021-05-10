@@ -13,28 +13,35 @@
 .gmail {
   display: block;
   background-image: url("./email.png");
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: "12rem";
+  border-radius: 6px;
 }
 
 .github {
   display: block;
   background-image: url("./github-square.png");
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: "10rem";
+  border-radius: 6px;
 }
 
 .linkedin {
   display: block;
-  background-image: url("./brand-linkedin.png");
-  background-position: center;
+  background-image: url("./linkedin.png");
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: "10rem";
+  border-radius: 6px;
 }
 
 .footer-div {
   display: flex;
   width: 80%;
   padding-top: 3rem;
+  border-radius: 10px;
 }
 
 .col-5-div p {
@@ -43,7 +50,7 @@
 .footer-divs {
   flex-grow: 1;
   height: 12rem;
-  width: 33.3%;
+
   background-color: #00000027;
 }
 

@@ -1,9 +1,5 @@
 import React from "react";
 import "./projects.css";
-import mli from "./spaceapp.png";
-import harmoni from "./spaceapp.png";
-import app from "./spaceapp.png";
-import work from "./spaceapp.png";
 
 const ImgDiv = ({ alt, text, link, img, visit }) => {
   return (
@@ -17,7 +13,7 @@ const ImgDiv = ({ alt, text, link, img, visit }) => {
         <p>{text}</p>
 
         <a
-          style={{ textDecoration: "none", color: "#72705B" }}
+          style={{ textDecoration: "none", color: "rgb(137 184 138)" }}
           rel="noreferrer"
           target="_blank"
           href={link}

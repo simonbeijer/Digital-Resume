@@ -16,7 +16,7 @@ const Contact = () => {
         <div
           className="footer-div"
           style={
-            width > 600
+            width > 800
               ? {
                   flexDirection: "row",
                   justifyContent: "space-evenly",
@@ -30,41 +30,52 @@ const Contact = () => {
           }
         >
           <a
-            className="display-flex footer-divs gmail"
-            href="mailto:simon.beijer@gmail.com"
-            rel="noreferrer"
-            target="_blank"
-            style={
-              width > 600
-                ? {
-                    marginRight: "1rem",
-                    flexDirection: "column",
-                  }
-                : {
-                    flexDirection: "column",
-                    marginRight: "0rem",
-                  }
-            }
-          >
-            <p>Please contact me if you are intrested</p>
-          </a>
-
-          <a
             href="https://www.linkedin.com/in/simon-beijer-a27b37181?trk=people-guest_profile-result-card_result-card_full-click&originalSubdomain=se"
             rel="noreferrer"
             target="_blank"
             className="display-flex footer-divs linkedin"
             style={
-              width > 600
+              width > 800
                 ? {
+                    marginRight: "1rem",
+                    marginBottom: "0rem",
                     flexDirection: "column",
+
+                    width: "33.3%",
                   }
                 : {
+                    width: "60%",
+                    marginBottom: "1rem",
+
                     marginRight: "0rem",
                   }
             }
           >
-            <p>Add me on LinkedIn</p>
+            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
+              Add me on LinkedIn
+            </p>
+          </a>
+          <a
+            className="display-flex footer-divs gmail"
+            href="mailto:simon.beijer@gmail.com"
+            rel="noreferrer"
+            target="_blank"
+            style={
+              width > 800
+                ? {
+                    flexDirection: "column",
+                    width: "33.3%",
+                  }
+                : {
+                    width: "60%",
+                    flexDirection: "column",
+                    marginRight: "0rem",
+                  }
+            }
+          >
+            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
+              Send me an email
+            </p>
           </a>
 
           <a
@@ -73,18 +84,25 @@ const Contact = () => {
             target="_blank"
             className="display-flex footer-divs github"
             style={
-              width > 600
+              width > 800
                 ? {
                     marginLeft: "1rem",
+                    marginTop: "0rem",
+
+                    width: "33.3%",
                     flexDirection: "column",
                   }
                 : {
+                    width: "60%",
+                    marginTop: "1rem",
                     flexDirection: "column",
                     marginLeft: "0rem",
                   }
             }
           >
-            <p>Feel free to visit my Github</p>
+            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
+              Visit my Github
+            </p>
           </a>
         </div>
         <p
