@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/digital-resume/static/css/main.b3df867e.chunk.css",
+    "main.css": "/digital-resume/static/css/main.882ce095.chunk.css",
     "main.js": "/digital-resume/static/js/main.e31bcfd2.chunk.js",
     "main.js.map": "/digital-resume/static/js/main.e31bcfd2.chunk.js.map",
     "runtime-main.js": "/digital-resume/static/js/runtime-main.f699ee0d.js",
@@ -10,7 +10,7 @@
     "static/js/3.6dafc1c8.chunk.js": "/digital-resume/static/js/3.6dafc1c8.chunk.js",
     "static/js/3.6dafc1c8.chunk.js.map": "/digital-resume/static/js/3.6dafc1c8.chunk.js.map",
     "index.html": "/digital-resume/index.html",
-    "static/css/main.b3df867e.chunk.css.map": "/digital-resume/static/css/main.b3df867e.chunk.css.map",
+    "static/css/main.882ce095.chunk.css.map": "/digital-resume/static/css/main.882ce095.chunk.css.map",
     "static/js/2.983ff0c0.chunk.js.LICENSE.txt": "/digital-resume/static/js/2.983ff0c0.chunk.js.LICENSE.txt",
     "static/media/FizzBuzz.8422cc3e.png": "/digital-resume/static/media/FizzBuzz.8422cc3e.png",
     "static/media/harmoni.def67a7e.png": "/digital-resume/static/media/harmoni.def67a7e.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.f699ee0d.js",
     "static/js/2.983ff0c0.chunk.js",
-    "static/css/main.b3df867e.chunk.css",
+    "static/css/main.882ce095.chunk.css",
     "static/js/main.e31bcfd2.chunk.js"
   ]
 }
