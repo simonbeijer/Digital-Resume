@@ -1,22 +1,25 @@
 import React from "react";
 import useWindowDimensions from "../../sizeHook";
 import "./contact.scss";
-import linked from "./LI-In-Bug.png";
-import github from "./Octocat.png";
 import hooli from "./hooli.png";
-import gmail from "./gmail.png";
 const Contact = () => {
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   return (
     <div id="contact" className="grid-col-5 ">
-      <div className="col-5-div display-flex max-width">
+      <div
+        className={
+          width < 900
+            ? "col-5-div display-flex"
+            : "col-5-div display-flex max-width"
+        }
+      >
         <div>
           <h2>Contact</h2>
         </div>
         <div
           className="footer-div"
           style={
-            width > 800
+            width > 900
               ? {
                   flexDirection: "row",
                   justifyContent: "space-evenly",
@@ -35,9 +38,9 @@ const Contact = () => {
             target="_blank"
             className="display-flex footer-divs linkedin"
             style={
-              width > 800
+              width > 900
                 ? {
-                    marginRight: "1rem",
+                    marginRight: "3rem",
                     marginBottom: "0rem",
                     flexDirection: "column",
 
@@ -51,9 +54,7 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
-              Add me on LinkedIn
-            </p>
+            <p style={{ textAlign: "center" }}>Add me on LinkedIn</p>
           </a>
           <a
             className="display-flex footer-divs gmail"
@@ -61,7 +62,7 @@ const Contact = () => {
             rel="noreferrer"
             target="_blank"
             style={
-              width > 800
+              width > 900
                 ? {
                     flexDirection: "column",
                     width: "33.3%",
@@ -73,9 +74,7 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
-              Send me an email
-            </p>
+            <p style={{ textAlign: "center" }}>Send me an email</p>
           </a>
 
           <a
@@ -84,9 +83,9 @@ const Contact = () => {
             target="_blank"
             className="display-flex footer-divs github"
             style={
-              width > 800
+              width > 900
                 ? {
-                    marginLeft: "1rem",
+                    marginLeft: "3rem",
                     marginTop: "0rem",
 
                     width: "33.3%",
@@ -100,9 +99,7 @@ const Contact = () => {
                   }
             }
           >
-            <p style={{ textAlign: "center", color: "#d4d4d4" }}>
-              Visit my Github
-            </p>
+            <p style={{ textAlign: "center" }}>Visit my Github</p>
           </a>
         </div>
         <p

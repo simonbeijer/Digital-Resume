@@ -1,5 +1,5 @@
 #contact {
-  background-color: #707373;
+  background-color: #e1e6e6;
 }
 
 .col-5-div {
@@ -15,7 +15,7 @@
   background-image: url("./email.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 10rem;
+  background-size: 8rem;
   border-radius: 6px;
 }
 
@@ -24,7 +24,7 @@
   background-image: url("./github-square.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 8.4rem;
+  background-size: 6.4rem;
   border-radius: 6px;
 }
 
@@ -33,7 +33,7 @@
   background-image: url("./linkedin.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 9.8rem;
+  background-size: 7.8rem;
   border-radius: 6px;
 }
 
@@ -49,9 +49,9 @@
 
 .footer-divs {
   flex-grow: 1;
-  height: 12rem;
+  height: 10rem;
 
-  background-color: #00000027;
+  background-color: #00000017;
 }
 
 .col-5-div a {

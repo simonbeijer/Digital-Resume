@@ -1,16 +1,20 @@
 import React from "react";
-import "./projects.css";
-import mli from "./mli.png";
-import harmoni from "./harmoni.png";
-import app from "./scorify.png";
-import work from "./FizzBuzz.png";
-import ImgDiv from "./imgDiv";
 import useWindowDimensions from "../../sizeHook";
+import work from "./FizzBuzz.png";
+import harmoni from "./harmoni.png";
+import ImgDiv from "./imgDiv";
+import mli from "./mli.png";
+import "./projects.css";
+import app from "./scorify.png";
 
 const Projects = () => {
-  const { width, height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
+
   return (
-    <div id="projects" className="grid-col-4 padding-content">
+    <div
+      id="projects"
+      className={width < 600 ? "grid-col-4" : "grid-col-4 padding-content"}
+    >
       <div
         className="col-4-div display-flex max-width"
         style={{ padding: "3rem 0 2rem 0" }}

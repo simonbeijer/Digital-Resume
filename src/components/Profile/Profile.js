@@ -1,22 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import useWindowDimensions from "../../sizeHook";
 import "./profile.css";
 import sb2 from "./sb2.png";
-import useWindowDimensions from "../../sizeHook";
 
-const Profile = ({ setHeights }) => {
-  const { width, height } = useWindowDimensions();
-  const profileDiv = useRef();
-  const [refState, setRefState] = useState(0);
-
-  useEffect(() => {
-    if (profileDiv.current.offsetHeight !== refState) {
-      setRefState(profileDiv.current.offsetHeight);
-      setHeights({ Profile: refState });
-    }
-  }, [profileDiv, refState, setHeights]);
+const Profile = () => {
+  const { width } = useWindowDimensions();
 
   return (
-    <div ref={profileDiv} id="profile" className=" padding-content">
+    <div id="profile" className={width < 600 ? "" : "padding-content"}>
       <div className="col-1-div display-flex max-width">
         <div style={{ padding: "1rem" }}>
           <h2>About</h2>

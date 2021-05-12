@@ -1,19 +1,12 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 import "./education.css";
+import useWindowDimensions from "../../sizeHook";
 
-const Education = ({ setHeights }) => {
-  const educationDiv = useRef();
-  const [refState, setRefState] = useState(0);
-
-  useEffect(() => {
-    if (educationDiv.current.offsetHeight !== refState) {
-      setRefState(educationDiv.current.offsetHeight);
-      setHeights({ Education: refState });
-    }
-  }, [educationDiv, refState, setHeights]);
+const Education = () => {
+  const { width } = useWindowDimensions();
 
   return (
-    <div ref={educationDiv} id="education" className="padding-content ">
+    <div id="education" className={width < 600 ? " " : "padding-content "}>
       <div className="max-width">
         <div
           style={{ padding: "0 10% 2rem 10%" }}
@@ -91,7 +84,6 @@ const Education = ({ setHeights }) => {
                 >
                   Medieinstitutet.se
                 </a>
-                {console.log(refState)}
               </li>
             </ul>
           </div>

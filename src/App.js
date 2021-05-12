@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import SideBar from "./components/Sidebar/Sidebar";
 import HeroImg from "./components/HeroImg/HeroImg";
 import Profile from "./components/Profile/Profile";
@@ -7,31 +7,37 @@ import Abilities from "./components/Abilities/Abilities";
 import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import useWindowDimensions from "./sizeHook";
-import getWindowScroll from "./scrollHook";
-import { useState } from "react";
 
 function App() {
-  // const profileDiv = useRef();
-  const { width, height } = useWindowDimensions();
-  const { scroll } = getWindowScroll();
-  const [allHeights, setAllHeights] = useState([]);
-  useEffect(() => {
-    console.log("APP", allHeights);
+  const appDiv = useRef();
+  const [allHeights, setAllHeights] = useState({
+    profile: 0,
+    education: 0,
+    abilitie: 0,
+    project: 0,
+    contact: 0,
   });
 
-  const setAllHeightsFunction = (newObject) => {
-    setAllHeights((allHeights) => [...allHeights, newObject]);
-  };
+  useEffect(() => {
+    if (appDiv) {
+      setAllHeights({
+        profile: appDiv.current.childNodes[2].offsetHeight,
+        education: appDiv.current.childNodes[3].offsetHeight,
+        abilitie: appDiv.current.childNodes[4].offsetHeight,
+        project: appDiv.current.childNodes[5].offsetHeight,
+        contact: appDiv.current.childNodes[6].offsetHeight,
+      });
+    }
+  }, []);
 
   return (
-    <div className="App">
-      <SideBar />
+    <div ref={appDiv} className="App">
+      <SideBar allHeightRefs={allHeights} />
       <HeroImg />
-      <Profile setHeights={setAllHeightsFunction} />
-      <Education setHeights={setAllHeightsFunction} />
-      <Abilities setHeights={setAllHeights} />
-      <Projects setHeights={setAllHeights} />
+      <Profile />
+      <Education />
+      <Abilities />
+      <Projects />
       <Contact />
     </div>
   );
