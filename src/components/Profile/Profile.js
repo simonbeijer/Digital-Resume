@@ -7,8 +7,14 @@ const Profile = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <div id="profile" className={width < 600 ? "" : "padding-content"}>
-      <div className="col-1-div display-flex max-width">
+    <div id="profile" className={"padding-content"}>
+      <div
+        className={
+          width < 600
+            ? "col-1-div display-flex"
+            : "col-1-div display-flex max-width"
+        }
+      >
         <div style={{ padding: "1rem" }}>
           <h2>About</h2>
         </div>

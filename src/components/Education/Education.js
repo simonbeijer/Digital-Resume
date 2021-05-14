@@ -6,8 +6,8 @@ const Education = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <div id="education" className={width < 600 ? " " : "padding-content "}>
-      <div className="max-width">
+    <div id="education" className={"padding-content"}>
+      <div className={width < 600 ? " " : "max-width"}>
         <div
           style={{ padding: "0 10% 2rem 10%" }}
           className="col-2-div display-flex"
