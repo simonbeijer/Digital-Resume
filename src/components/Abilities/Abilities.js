@@ -15,11 +15,13 @@ const Abilities = () => {
         <h2 style={{ textAlign: "center" }}>Abilities</h2>
         {skillArr.map((content) => (
           <AbilityDiv
+            svg={content.svg}
             name={content.name}
             size={content.size}
             title={content.title}
           />
         ))}
+     
       </div>
     </div>
   );
