@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/digital-resume/static/css/main.8f033c73.chunk.css",
-    "main.js": "/digital-resume/static/js/main.d22caad8.chunk.js",
-    "main.js.map": "/digital-resume/static/js/main.d22caad8.chunk.js.map",
+    "main.js": "/digital-resume/static/js/main.171ce086.chunk.js",
+    "main.js.map": "/digital-resume/static/js/main.171ce086.chunk.js.map",
     "runtime-main.js": "/digital-resume/static/js/runtime-main.f699ee0d.js",
     "runtime-main.js.map": "/digital-resume/static/js/runtime-main.f699ee0d.js.map",
     "static/js/2.983ff0c0.chunk.js": "/digital-resume/static/js/2.983ff0c0.chunk.js",
@@ -13,15 +13,34 @@
     "static/css/main.8f033c73.chunk.css.map": "/digital-resume/static/css/main.8f033c73.chunk.css.map",
     "static/js/2.983ff0c0.chunk.js.LICENSE.txt": "/digital-resume/static/js/2.983ff0c0.chunk.js.LICENSE.txt",
     "static/media/FizzBuzz.8422cc3e.png": "/digital-resume/static/media/FizzBuzz.8422cc3e.png",
+    "static/media/angular.95deeda9.svg": "/digital-resume/static/media/angular.95deeda9.svg",
+    "static/media/css3.ee63f658.svg": "/digital-resume/static/media/css3.ee63f658.svg",
+    "static/media/engelska.8c3d2102.svg": "/digital-resume/static/media/engelska.8c3d2102.svg",
+    "static/media/github.30437b48.svg": "/digital-resume/static/media/github.30437b48.svg",
     "static/media/harmoni.def67a7e.png": "/digital-resume/static/media/harmoni.def67a7e.png",
+    "static/media/html5.c28bc668.svg": "/digital-resume/static/media/html5.c28bc668.svg",
+    "static/media/javascript.0015ae73.svg": "/digital-resume/static/media/javascript.0015ae73.svg",
+    "static/media/mac.84882c91.svg": "/digital-resume/static/media/mac.84882c91.svg",
     "static/media/mli.7c800ee3.png": "/digital-resume/static/media/mli.7c800ee3.png",
+    "static/media/mongo.c9d6ed2a.svg": "/digital-resume/static/media/mongo.c9d6ed2a.svg",
+    "static/media/node.03a234e1.svg": "/digital-resume/static/media/node.03a234e1.svg",
+    "static/media/php.0c5b2b55.svg": "/digital-resume/static/media/php.0c5b2b55.svg",
+    "static/media/react.29c2058e.svg": "/digital-resume/static/media/react.29c2058e.svg",
+    "static/media/redux.81a445bc.svg": "/digital-resume/static/media/redux.81a445bc.svg",
     "static/media/sb2.4de3079e.png": "/digital-resume/static/media/sb2.4de3079e.png",
-    "static/media/scorify.0f385bec.png": "/digital-resume/static/media/scorify.0f385bec.png"
+    "static/media/scorify.0f385bec.png": "/digital-resume/static/media/scorify.0f385bec.png",
+    "static/media/scrum.a19c1269.svg": "/digital-resume/static/media/scrum.a19c1269.svg",
+    "static/media/sql.ec712bc9.svg": "/digital-resume/static/media/sql.ec712bc9.svg",
+    "static/media/svenska.34559b63.svg": "/digital-resume/static/media/svenska.34559b63.svg",
+    "static/media/typescript.130a9110.svg": "/digital-resume/static/media/typescript.130a9110.svg",
+    "static/media/vscode.10bbb0e8.svg": "/digital-resume/static/media/vscode.10bbb0e8.svg",
+    "static/media/vue.5b80a4da.svg": "/digital-resume/static/media/vue.5b80a4da.svg",
+    "static/media/windows.e80da31f.svg": "/digital-resume/static/media/windows.e80da31f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f699ee0d.js",
     "static/js/2.983ff0c0.chunk.js",
     "static/css/main.8f033c73.chunk.css",
-    "static/js/main.d22caad8.chunk.js"
+    "static/js/main.171ce086.chunk.js"
   ]
 }
