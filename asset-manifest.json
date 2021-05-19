@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/digital-resume/static/css/main.8f033c73.chunk.css",
-    "main.js": "/digital-resume/static/js/main.8a8e3898.chunk.js",
-    "main.js.map": "/digital-resume/static/js/main.8a8e3898.chunk.js.map",
+    "main.css": "/digital-resume/static/css/main.cc8756cb.chunk.css",
+    "main.js": "/digital-resume/static/js/main.9d6471a6.chunk.js",
+    "main.js.map": "/digital-resume/static/js/main.9d6471a6.chunk.js.map",
     "runtime-main.js": "/digital-resume/static/js/runtime-main.f699ee0d.js",
     "runtime-main.js.map": "/digital-resume/static/js/runtime-main.f699ee0d.js.map",
     "static/js/2.983ff0c0.chunk.js": "/digital-resume/static/js/2.983ff0c0.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6dafc1c8.chunk.js": "/digital-resume/static/js/3.6dafc1c8.chunk.js",
     "static/js/3.6dafc1c8.chunk.js.map": "/digital-resume/static/js/3.6dafc1c8.chunk.js.map",
     "index.html": "/digital-resume/index.html",
-    "static/css/main.8f033c73.chunk.css.map": "/digital-resume/static/css/main.8f033c73.chunk.css.map",
+    "static/css/main.cc8756cb.chunk.css.map": "/digital-resume/static/css/main.cc8756cb.chunk.css.map",
     "static/js/2.983ff0c0.chunk.js.LICENSE.txt": "/digital-resume/static/js/2.983ff0c0.chunk.js.LICENSE.txt",
     "static/media/FizzBuzz.8422cc3e.png": "/digital-resume/static/media/FizzBuzz.8422cc3e.png",
     "static/media/angular.95deeda9.svg": "/digital-resume/static/media/angular.95deeda9.svg",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.f699ee0d.js",
     "static/js/2.983ff0c0.chunk.js",
-    "static/css/main.8f033c73.chunk.css",
-    "static/js/main.8a8e3898.chunk.js"
+    "static/css/main.cc8756cb.chunk.css",
+    "static/js/main.9d6471a6.chunk.js"
   ]
 }
